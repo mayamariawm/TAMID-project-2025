@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
 <title>My Full-Stack Blog</title>
 <style>
-  /* Reset and base */
+
   *, *::before, *::after {
     box-sizing: border-box;
   }
@@ -261,7 +261,7 @@
 (() => {
   'use strict';
 
-  // === Constants and Helpers ===
+  // Constants and Helpers 
   const LS_USERS_KEY = 'blog-app-users';
   const LS_POSTS_KEY = 'blog-app-posts';
   const LS_SESSION_KEY = 'blog-app-session';
@@ -299,12 +299,12 @@
   }
 
 
-  // === Application State ===
+  // Application State 
   let users = lsGet(LS_USERS_KEY);
   let posts = lsGet(LS_POSTS_KEY);
   let currentUser = JSON.parse(localStorage.getItem(LS_SESSION_KEY)) || null;
 
-  // === DOM Elements ===
+  // DOM Elements 
   const navAuthLinks = document.getElementById('nav-auth-links');
   const authSection = document.getElementById('auth-section');
   const authForm = document.getElementById('auth-form');
